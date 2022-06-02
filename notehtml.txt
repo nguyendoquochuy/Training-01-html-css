@@ -1,0 +1,252 @@
+Html là ngôn ngữ đánh dấy siêu văn bản
+các phần từ được định nghĩa bởi các thẻ 
+html mô ta cấu trúc web thông qua thẻ , nó như là bộ khung của web
+trinh duyệt ko hiển thị các thẻ mà theo nội dung của định dạng của thẻ
+thẻ html định nghĩa như: tiêu đề , đoạn văn, hình ảnh , form
+ví dụ :
+
+<!doctype html>: khai bái trình duyệt là html
+<html lang="en"
+<head>
+<meta chartset="UTF-8">
+<title> Tiêu đề website </title>
+<head>
+<body>
+<h1> nội dung web </h1>
+<body>
+</html>
+
+doctype : khai báo nội dung trang
+html: phần từ gốc quanh trang web
+head: khu vực khai báo tiêu đề, kết nối js. css, fonts, plugin
+body: khu vực định nghĩa web
+UTF-8 là gì : ??? tự kiếm định nghĩa
+<head> là phần đầu của web
+<html>: thẻ mở
+</html> thẻ đóng
+<title> tiêu đề web
+tổ hợp phím : alt + shift +f
+
+CHÚ THÍCH CODE :
+ví dụ
+<!-- checklist
+#1. thẻ tiêu đề
+#2. thẻ đoạn văn -->
+
+cú pháp <!-- --> : tạo ra chú thích
+nếu muốn bỏ hoặc cmt dùng tổ hợp phím ctrl +/
+
+Thẻ định nghĩa tiêu đề nội dung:
+ví dụ: 
+<body>
+	<h1> tiêu đề 1 </h1>
+	<h2> tiêu đề 2 </h2>
+</body>
+Tác dụng: hiển thị tiêu đề, công dụng là để khai báo nội dung nào quan trọng của web
+Theo thứ tự : h1 > h2 > h3
+lưu ý: cỡ chữ sẽ giảm dân từ H1 đến H....
+
+Thẻ định nghĩa nội dung văn bản:
+<p>: tạo ra đoạn văn bản
+Tác dụng: dùng để định nghĩa hiển thị nội dung là văn bản trên web, có thể là báo , nội dung .....
+Lưu ý: văn bản hiện thị như word, text hiển thị từ trái sang phải, từ trên xuống dưới
+
+Thẻ xuống dòng nội dung:
+<br>: dùng đẻ xuống dòng ngay vị trí báo thẻ
+Lưu ý : Nội dung phía sau thẻ <br> được xuống 1 dòng, nếu sử dụng nhiều thẻ <br> thì sẽ xuống dòng bấy nhiêu
+ ví dụ
+<body>
+<p> xin chào mọi người , tôi là huy. <br> năm nay tôi 22 tuổi và đang là sinh viên năm cuối ở tại Đại Học Duy Tân
+
+Thêm ảnh vào website:
+<body>
+<img src='avatar.jpg' alt="Mô tả" title= " Tiêu đề">
+</body>
+<img> giúp hiển thị hình ảnh
+
+src: định nghĩa link đường dẫn chứa hinh ảnh
+alt: mô tả hình ảnh ( nó hiển thị khi ảnh ko load được)
+title: hiển thị tiêu đề hình ảnh
+
+Các loại đường dẫn trong web:
+-Có 2 loại đường dẫn
++đường dẫn tương đối: dùng để kết nối tài nguyên trong cùng 1 dự án như hình ảnh, trang html. đường đẫn được tạo ra từ mối tương quan file. 
++đường dẫn tuyệt đối: kết nối đến 1 tài nguyên khác.
+ví dụ
+<!-- đường dẫn tương đối -->
+<img src="avatar.jpg">
+<img src="anh/avatar.jpg>
+<!-- đường dẫn tuyệt đối -->
+<img src="http://vnexpress.com/avatar.jpg">
+Lưu ý: dùng đg tuyệt đối , nếu như sever web đó mà sụp thì bên mình cũng sụp
+
+Thẻ liên kết trong webstie:
+Mỗi trang sẽ có 1 đường dẫn khác nhau.
+ví dụ:
+<body>
+<a href="heading.html">Tiêu đề</a>
+</body>
+
+<a>: dùng để tạo ra các mạng lưới liên kết các trang trong cùng một web và tạo sự liên kết giữa nhiêu web với nhau.
+Trong đó:
+href: khai báo đường dẫn cần liên kết
+target ="blank": định nghĩa trang mới bằng tab mới- giữ nguyên tab cũ
+
+Tạo mục lục bài viết bằng link
+ví dụ:
+<h3> mục lục </h3>
+<a href="heading.html">Tiêu đề</a>
+<a href="demo.html"></a>
+<a href="heading.html">Tiêu đề</a>
+<!-- Nội dung -->
+<h2> id="html">html</h2>
+<p>Content Html</p>
+<h2> id="css">css</h2>
+<p>Content Css</p>
+<h2> id="php">php</h2>
+<p>Content php </p>
+
+Dùng liên kết nhanh đến với những nội dung cần xem trong bài viết.
+Cách hoạt đông: kết nối link ở mục lục với tiêu đề ở nội dung cần đọc
+
+Thẻ Hr: tạo ra đường ngăn cách
+
+Thẻ in đậm, in nghiêng , gạch chân:
+ví dụ
+<body>
+	<b> In đậm  </b>
+	<i> In nghiêng </i>
+	<u> Gạch chân </u>
+</body>
+
+Ngoài ra có thẻ <strong> là mức độ in đậm ưu tiên hơn là <b>
+Ngoài ra có thẻ <em> là mức độ in đậm ưu tiên hơn là <i>
+
+Tên file html làm trang chủ của web
+ví dụ :
+index. html
+home.html
+
+Thẻ danh sách không có thứ tự
+ví dụ
+<body>
+	<ul>
+	<li> danh sach 1</li>
+	<li> danh sach 2</li>
+	<li> danh sach 3</li>
+</body>
+
+Tác dụng: hiển thị nội dung dạng danh sách, có cấu trúc lặp đi lặp lại như menu , danh sách bài viết....
+- Một số type: disc, square , circle, none
+
+Thẻ danh sách có thứ tự :
+ví dụ:
+<body>
+	<ol>
+		<li> danh sach 1</li>
+		<li> danh sach 2</li>
+		<li> danh sach 3</li>
+	</ol>
+</body>
+Tác dụng: dùng cho những danh sách có đánh số thứ tự
+hiện thị nội đunganh sách hiển thị có thứ tự. như đề mục từng phần trong một nội dung
+1 số type: a,A,i,I,1(mặc định)
+
+Thẻ định dạng thông tin phụ
+<span> dùng để hiển thị thông tin phụ trên web như: số lượng, giá...
+<!--giá sản phẩm -->
+<span> giá : 500000đ </span>
+<!-- số lượng comment -->
+<span class="number-comment">100</span>
+
+THẻ gạch ngang text(giá cũ) giá mới
+<del>: dùng để gạch nganh một đoạn text mà chúng ta muốn người dùng biết nội dung ví dụ như giá cũ...
+
+<body> 
+<!-- Giá cũ-->
+<del> 250.00<.del>
+</body>
+
+Thẻ hiện thị thông tin bảng:
+<table>, <tr> , <td> dùng để hiển thị bảng dạng như danh sách user, đơn hàng , tính năng sản phẩm...
+Thuộc tính:
+borrder: thiết lập border
+rowspan: nhóm hàng
+colspan: nhóm cột
+Phần tiêu đê nên sử dụng <th> hơn vì nó sẽ được bôi đậm
+
+Thẻ form nhập dữ liệu lext, password
+<form action="">
+	<input type="text" name="username"> <br>
+	<input type="passwword" name="password"
+</form>
+
+Dùng để tạo ô nhập dữ liệu text( cho 1 dòng) và password
+thuộc tính: 
+type:kiểu dữ liệu
+name: tên của trường dữ liệu
+value: giá trị của trường dữ liệu
+
+Tạo tiêu đề phần từ form-auto focus
+ví dụ: 
+<label for="username"> Tên Login </Lable>
+<input type="text" name="username" id="username">
+Tác dụng: sử dụng label để hiện thị tiêu đề của input kết hợp tạo hiệu ứng auto focus và input khi click vào label
+for=" username"
+id="username"
+
+Form nhập liệu email-number
+ví dụ:
+<input type="email" name="email">
+<input type="number" name="amount">
+tác dụng: dùng để nhập liệu email hoặc số lượng ( chú ý là số nguyên)
+min="0"
+max="10"
+
+Form nhập dữ liệu ngày tháng ( date)
+ví dụ
+<lable for="birth"> Ngày sinh </lable>
+<input type="date" name"birth" id="birth"
+dùng để nhập dữ liệu ngày tháng một cách tiện lợi qua cửa số ngày tháng
+type="date"
+
+Form nhập dữ liệu select box:
+Dùng để nhập dữ liệu thanh xổ ,chọn 1 trong nhiều lựa chọn
+<form action=""
+<label for="city"> Chọn thành phố</label>
+<select name="city" id="city">
+	<option value="0"> chọn thành phố </option>
+	<option value="1"> Hà Nội </option>
+	<option value="2"> Đà Nẵng </option>
+	<option value="3"> Hồ Chí Minh </option>
+</select>
+</form>
+
+Form nhập dư liệu radio box
+tạo ra hộp chọn một vài lựa chọn như : giới tính...
+
+ví dụ:
+<label> Chọn giới tính</lable>
+<label for="male">Nam</lable>
+<input type="radio" name="gender" value="male" id="male"
+<lable for="female">Nữ</label>
+<input type="radio" name="gender" value"female" id="female"
+
+form nhập dữ liệu checkbox
+
+<input type="checkbox" name="hobby" value="book"
+<label for="book">Đọc sách</lable>
+
+<input type="checkbox" name="hobby" value="game"
+<label for="game">Chơi Game</lable>
+
+<input type="checkbox" name="hobby" value="shopping"
+<label for="shopping">Mua sắm </lable>
+
+Form nhập dữ liệu đoạn văn bản:
+giúp nhập liệu nội dung văn bản tổ cứ nhiều dòng như : chi tiết bài viết, chi tiết sản phẩm....
+thuộc tính : 
+clos:số hàng 
+rows: số cột
+<!-- lưu ý chi tiết bài viết -->
+<textarea name="post-content " id="" clos="30" rows="10"></textarea>
