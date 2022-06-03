@@ -339,3 +339,37 @@ Thẻ thông tin phụ- aside
 </section>
 
 Dùng để chứa thông tin phụ hoặc khối sidebar
+------------------------------------------------------------------------------------------
+Css:
+Css là viết tắt của cascading style sheets
+Css quyết định cách các thẻ hiển thị trên màn hình , trên nhiều thiết bị khác nhau
+Css có thẻ hiện thị nhiều trang cùng 1 lúc
+css có thể lưu tác riêng với html bằng đuôi .css
+css nhúng vào html dễ hàng qua 3 cách ( inline,internal,external)
+
+Ví dụ :
+#wrapper{
+	width: 960px
+	margin: 0px auto;
+}
+width là độ rộng
+ margin là lề ( trên dưới là 0 còn bên trái phải là auto)
+
+3 cách nhúng css vào html:
+inline: Viết Css trực tiếp lên thẻ html
+internal: thêm một khối css vào html
+external: nhúng css qua link mở rộng .css
+chú ý: khi vào dự án thường file lưu css riêng để dễ quản lý
+
+ví dụ
+Inline css
+<h1 stye="color: #f00;"> a hihiihihihhihhiihih </h1>
+
+internal vss
+<style>
+h1 {
+color: #f00;
+}
+</style>
+external
+<link rel="stylesheet" href="style.css"
