@@ -250,3 +250,92 @@ clos:số hàng
 rows: số cột
 <!-- lưu ý chi tiết bài viết -->
 <textarea name="post-content " id="" clos="30" rows="10"></textarea>
+
+LƯU Ý, KHI TẠO TEXTAREA THÌ PHẦN ĐỘ RỘNG ĐỘ CAO CHỈ DÙNG TRONG HTML KO DÙNG CHO CSS
+
+Phần tử form lưu trẽ dữ liệu ngầm
+
+ví dụ:
+<input type="hidden" name="redirect-to" value="http://kenh14.vn"
+
+Tác dụng: Giúp lưu trẽ dữ liệu ngầm ( không do người dùng nhập) khi gửi lên sever
+
+Submit dữ liệu form lên sever
+
+ví dụ:
+<input type="submit" value"Login" Name="btn-login">
+<button name="btn-reg">Register</button>
+
+Tác dụng: giúp submit dữ liệu đã nhập lên sever phục vụ cho quá trình xử lý
+Chú ý: sử dụng button với trường hợp hiển thị nút bấm có cấu trúc phức tạp( ko chỉ có text)
+Có 2 kiểu method : Get và Post
+get là phương thức mặc định quá trình submit dữ liệu sẽ đẩy toàn bộ dữ liệu lên sever và sẽ lấy xuống
+post dữ liệu đc gửi lên sever nhưng ko hiển thị
+
+Thẻ DIV phân chia layout 
+ví dụ:
+<div id="wrapper">
+<div id="header">header</div>
+<div id="content">content</div>
+<div id="footer">footer</div>
+</div>
+Tác dụng của div là dùng để chia layout web thành những khu vực cụ thể, giúp dễ quản lý và hiển thị từng phần
+lưu ý: div dễ đi kèm với id, class. không nên sử dụng div lộn xộn, lãng phí
+
+Thẻ Header, footer 
+<header> phần đầu/tiêu đề</header>
+<footer>phần dười/ chân</footer>
+
+Dùng để bao quanh phần đầu và phần chân đối tượng
+
+thẻ dinh nghĩa thanh điều hướng -NAV ( html5)
+
+ví dụ:
+
+<nav>
+	<ul>
+	<li<>href="">Home</a></li>
+	<li<>href="">Product</a></li>
+	<li<>href="">Contact</a></li>
+	</ul>
+</nav>
+
+Thẻ <nav> dung để bao quanh một thanh điều hướng ( menu)
+Lưu ý : trên web có thể có nhiều thẻ <nav> nhưng không lồng nhau
+
+Thẻ định nghĩa Artice( html5)
+
+<article>
+	<h1> Làm thể nào để trở thành lập trình viên </h1>
+	<p> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+</article>
+
+thẻ <article> có tác dụng dùng để bao quanh khu vực nội dung hiển thị
+
+thẻ section ( html5)
+
+<section>
+	<h1> hình ảnh hoạt động</h1>
+	<ul>
+	 <li><img src="link" alt=""></li>
+	 <li><img src="link" alt=""></li>
+	 <li><img src="link" alt=""></li>
+	</ul>
+</section>
+
+Dùng để bao quanh 1 khối html có chung 1 chủ đề( dùng cho phần content của website)
+
+Thẻ thông tin phụ- aside
+<section>
+	<h1> hình ảnh hoạt động</h1>
+	<ul>
+	 <li><img src="link" alt=""></li>
+	 <li><img src="link" alt=""></li>
+	 <li><img src="link" alt=""></li>
+	</ul>
+	<aside>
+	<p> những hình ảnh mới nhất 2020</p>
+	</aside>
+</section>
+
+Dùng để chứa thông tin phụ hoặc khối sidebar
